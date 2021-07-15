@@ -1,10 +1,10 @@
 package CreationalPatterns.Builder;
 
 public class Computer {
-    Monitor monitor;
-    Keaboard keaboard;
-    Mouse mouse;
-    SystemBlock systemBlock;
+   private Monitor monitor;
+   private Keaboard keaboard;
+   private Mouse mouse;
+   private SystemBlock systemBlock;
 
     public void setMonitor(Monitor monitor) {
         this.monitor = monitor;

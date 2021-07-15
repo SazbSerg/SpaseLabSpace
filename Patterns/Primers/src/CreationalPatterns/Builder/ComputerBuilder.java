@@ -18,7 +18,7 @@ public class ComputerBuilder {
         this.mouse = mouse;
         return this;
     }
-    ComputerBuilder buildSystemBlock(SystemBlock systemBlockonitor){
+    ComputerBuilder buildSystemBlock(SystemBlock systemBlock){
         this.systemBlock = systemBlock;
         return this;
     }
@@ -30,6 +30,4 @@ public class ComputerBuilder {
         computer.setSystemBlock(systemBlock);
         return  computer;
     }
-
-
 }

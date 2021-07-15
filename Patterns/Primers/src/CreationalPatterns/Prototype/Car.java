@@ -11,8 +11,8 @@ public class Car implements CopyObjects {
         this.engineType = engineType;
     }
 
-    public Car() {
-    }
+  //  public Car() {
+  //  }
 
     @Override
     public String toString() {

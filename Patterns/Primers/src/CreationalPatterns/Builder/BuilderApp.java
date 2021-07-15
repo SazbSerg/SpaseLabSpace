@@ -1,3 +1,4 @@
+
 package CreationalPatterns.Builder;
 
 public class BuilderApp {
@@ -10,5 +11,14 @@ public class BuilderApp {
                 .build();
         System.out.println(computer);
 
+        Computer computer2 = new ComputerBuilder()
+                .buildSystemBlock(SystemBlock.MODEL2)
+                .buildKeabord(Keaboard.GENIUS)
+                .buildMouse(Mouse.A4TECH)
+                .buildMonitor(Monitor.TOSHIBA)
+                .build();
+        System.out.println(computer2);
+
     }
 }
+
