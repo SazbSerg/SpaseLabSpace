@@ -11,3 +11,4 @@ public class Vocabulary {
         return info;
     }
 }
+//проверка коммита
