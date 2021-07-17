@@ -4,6 +4,7 @@ public class PrototypeApp {
     public static void main(String[] args) {
         Car car = new Car("Red", 200, "electro");
         System.out.println(car);
+
         Object copyCar = car.copy();
         System.out.println(copyCar);
 

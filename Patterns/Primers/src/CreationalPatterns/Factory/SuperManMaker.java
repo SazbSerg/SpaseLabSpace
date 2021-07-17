@@ -1,8 +1,9 @@
-package Factory;
+package CreationalPatterns.Factory;
 
 public class SuperManMaker implements PlayerMakerFactory{
     @Override
-    public Player playerMaker() {
+    public Player makePlayer() {
+
         return new SuperMan();
     }
 }

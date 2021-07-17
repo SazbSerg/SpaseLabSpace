@@ -1,5 +1,5 @@
-package Factory;
+package CreationalPatterns.Factory;
 
 public interface PlayerMakerFactory {
-    Player playerMaker();
+    Player makePlayer();
 }

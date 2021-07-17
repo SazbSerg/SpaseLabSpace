@@ -1,4 +1,4 @@
-package Factory;
+package CreationalPatterns.Factory;
 
 public interface Player {
     void going();

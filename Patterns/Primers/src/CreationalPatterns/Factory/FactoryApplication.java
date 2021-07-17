@@ -1,15 +1,16 @@
-package Factory;
+package CreationalPatterns.Factory;
 
 public class FactoryApplication {
     public static void main(String[] args) {
         PlayerMakerFactory playerMakerFactory = setPlayer("wonderwoman");
-        Player player = playerMakerFactory.playerMaker();
+       // PlayerMakerFactory playerMakerFactory = new WonderWomanMaker();
+        Player player = playerMakerFactory.makePlayer();
         player.fire();
         player.going();
         player.speaking();
 
         PlayerMakerFactory playerMakerFactory1 = setPlayer("superman");
-        Player player1 = playerMakerFactory1.playerMaker();
+        Player player1 = playerMakerFactory1.makePlayer();
         player1.fire();
         player1.going();
         player1.speaking();

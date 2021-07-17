@@ -1,4 +1,4 @@
-package Factory;
+package CreationalPatterns.Factory;
 
 public class SuperMan implements Player{
     @Override
