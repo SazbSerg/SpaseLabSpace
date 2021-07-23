@@ -12,14 +12,15 @@ public class BuilderApp {
                 .build();
         System.out.println(computer);
 
-        Computer computer2 = new ComputerBuilder()
-                .buildSystemBlock(SystemBlock.MODEL2)
-                .buildKeabord(Keaboard.GENIUS)
-                .buildMouse(Mouse.A4TECH)
-                .buildMonitor(Monitor.TOSHIBA)
+       // Computer computer2 = new Computer();
+        Computer computer1 = new ComputerBuilder()
+                .buildSystemBlock(SystemBlock.MODEL1)
+                .buildKeabord(Keaboard.HP)
+                .buildMouse(Mouse.GENIUS)
+                .buildMonitor(Monitor.SAMSUNG)
                 .build();
-        System.out.println(computer2);
 
+        System.out.println(computer1);
     }
 }
 

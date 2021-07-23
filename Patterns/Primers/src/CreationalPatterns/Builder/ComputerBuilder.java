@@ -6,6 +6,16 @@ public class ComputerBuilder {
     Mouse mouse = Mouse.DEFAULT_MOUSE;
     SystemBlock systemBlock = SystemBlock.DEFAULT_SYSTEM_BLOCK;
 
+    @Override
+    public String toString() {
+        return "ComputerBuilder{" +
+                "monitor=" + monitor +
+                ", keaboard=" + keaboard +
+                ", mouse=" + mouse +
+                ", systemBlock=" + systemBlock +
+                '}';
+    }
+
     ComputerBuilder buildMonitor(Monitor monitor){
         this.monitor = monitor;
         return this;

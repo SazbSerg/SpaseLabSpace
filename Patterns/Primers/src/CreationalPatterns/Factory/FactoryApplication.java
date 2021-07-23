@@ -15,7 +15,9 @@ public class FactoryApplication {
         player1.going();
         player1.speaking();
 
-
+        PlayerMakerFactory playerMakerFactory2 = new ZevsMakerFactory();
+        Player player2 = playerMakerFactory2.makePlayer();
+        player2.speaking();
 
     }
     public static PlayerMakerFactory setPlayer(String maker){
