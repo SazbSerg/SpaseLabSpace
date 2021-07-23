@@ -19,7 +19,4 @@ public abstract class AbstractClass implements InterInterface{
 
     }
 }
-<<<<<<< HEAD
 //проверка коммита 23.07.21 ...
-=======
->>>>>>> refs/remotes/github/branche1
