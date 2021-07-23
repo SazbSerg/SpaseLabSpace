@@ -19,4 +19,4 @@ public abstract class AbstractClass implements InterInterface{
 
     }
 }
-//проверка коммита 23.07.21
+//проверка коммита 23.07.21 ...
