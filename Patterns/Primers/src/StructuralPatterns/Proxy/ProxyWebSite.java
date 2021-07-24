@@ -3,6 +3,7 @@ package StructuralPatterns.Proxy;
 public class ProxyWebSite implements WebSite {
     String url;
     TargetWebSite site;
+
     public ProxyWebSite(String url) {
         this.url = url;
     }

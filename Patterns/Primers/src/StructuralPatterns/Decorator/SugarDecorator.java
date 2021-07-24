@@ -1,21 +1,21 @@
 package StructuralPatterns.Decorator;
 
 public class SugarDecorator implements CoffeeOrder {
-    CoffeeOrder sugar;
+    CoffeeOrder myCoffee;
     Integer stick = null;
     final Integer maxNumberOfSugar = 5;
 
-    public SugarDecorator(CoffeeOrder sugar, Integer stick) {
-        this.sugar = sugar;
+    public SugarDecorator(CoffeeOrder myCoffee, Integer stick) {
+        this.myCoffee = myCoffee;
         this.stick = stick;
     }
-    public SugarDecorator(CoffeeOrder sugar) {
-        this.sugar = sugar;
+    public SugarDecorator(CoffeeOrder myCoffee) {
+        this.myCoffee = myCoffee;
     }
 
     @Override
     public void order() {
-        sugar.order();
+        myCoffee.order();
 
         if (stick == null){
             System.out.println("without sugar");

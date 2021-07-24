@@ -17,6 +17,9 @@ public class DecoratorApp {
         CoffeeOrder coffeeOrder4 = new SugarDecorator(new Coffee(TypeOfCoffee.ESPRESSO), 100);
         coffeeOrder4.order();
 
+        CoffeeOrder coffeeOrder5 = new SugarDecorator(new Coffee(TypeOfCoffee.AMERICANO),6);
+        coffeeOrder5.order();
+
 
     }
 }
