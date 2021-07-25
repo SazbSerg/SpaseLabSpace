@@ -1,9 +1,9 @@
 package StructuralPatterns.Decorator;
 
 public class SugarDecorator implements CoffeeOrder {
-    CoffeeOrder myCoffee;
-    Integer stick = null;
-    final Integer maxNumberOfSugar = 5;
+    private CoffeeOrder myCoffee;
+    private Integer stick = null;
+    private final Integer maxNumberOfSugar = 5;
 
     public SugarDecorator(CoffeeOrder myCoffee, Integer stick) {
         this.myCoffee = myCoffee;
