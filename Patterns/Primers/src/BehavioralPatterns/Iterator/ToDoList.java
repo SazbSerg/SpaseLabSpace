@@ -5,7 +5,19 @@ import java.util.Arrays;
 import java.util.List;
 
 public class ToDoList implements Aggregate{
-    ArrayList<String> tasks = new ArrayList<>();
+    private ArrayList<String> tasks = new ArrayList<>();
+
+    public void add(String task){
+        tasks.add(task);
+
+    }
+
+    @Override
+    public String toString() {
+        return "ToDoList{" +
+                "tasks=" + tasks +
+                '}';
+    }
 
     @Override
     public Iterator getIterator() {

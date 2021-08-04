@@ -1,5 +1,6 @@
 package BehavioralPatterns.Command;
 
+//receiver
 public class Hero {
     void run(){
         System.out.println("Run");

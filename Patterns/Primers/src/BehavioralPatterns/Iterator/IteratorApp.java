@@ -5,12 +5,12 @@ public class IteratorApp {
         ToDoList toDoList = new ToDoList();
         Iterator iterator = toDoList.getIterator();
 
-        toDoList.tasks.add("Первое задание");
-        toDoList.tasks.add("Второе задание");
-        toDoList.tasks.add("Третье задание");
-        toDoList.tasks.add("Четвёртое задание");
-        toDoList.tasks.add("Пятое задание");
-        System.out.println(toDoList.tasks);
+        toDoList.add("Первое задание");
+        toDoList.add("Второе задание");
+        toDoList.add("Третье задание");
+        toDoList.add("Четвёртое задание");
+        toDoList.add("Пятое задание");
+        System.out.println(toDoList);
         System.out.println();
 
         System.out.println(iterator.getElement(4));
@@ -24,8 +24,8 @@ public class IteratorApp {
            System.out.println(iterator.next());
         }
 
-        toDoList.tasks.remove(2);
-        System.out.println(toDoList.tasks);
+        //toDoList.tasks.remove(2);
+       // System.out.println(toDoList.tasks);
         System.out.println();
 
         Iterator iterator1 = toDoList.getIterator();
