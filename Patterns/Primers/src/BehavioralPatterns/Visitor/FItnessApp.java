@@ -11,6 +11,7 @@ public class FItnessApp {
         Visitor crossfitAthlete = new CrossFitAthlete();
 
         System.out.println("Что происходит в тренажёрном зале?");
+
         gym.accept(fitnessBaby);
         gym.accept(someOldMan);
         gym.accept(crossfitAthlete);

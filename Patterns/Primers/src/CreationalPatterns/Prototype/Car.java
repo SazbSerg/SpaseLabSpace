@@ -23,7 +23,7 @@ public class Car implements CopyObjects {
     }
 
     @Override
-    public Object copy() {
+    public Car copy() {
         Car copy = new Car(this.color, this.power, this.engineType);
         return copy;
 

@@ -3,8 +3,8 @@ package BehavioralPatterns.Memento;
 public class Calculator {
    private int number;
 
-    public void setNumber(int memory) {
-        this.number = memory;
+    public void setNumber(int number) {
+        this.number = number;
     }
 
     public void load(Save save){  // сохранение поля number в поле number класса Save

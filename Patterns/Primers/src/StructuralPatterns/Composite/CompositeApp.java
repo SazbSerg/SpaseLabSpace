@@ -19,27 +19,16 @@ public class CompositeApp {
         composite1.addComponent(meat1);
         composite1.addComponent(water1);
         composite1.put();
+        System.out.println();
+        composite1.removeComponent(fruit1);
+        composite1.put();
+        System.out.println();
 
        Composite composite2 = new Composite();
-       composite2.addComponent(fruit2);
-       composite2.addComponent(meat2);
-       composite2.addComponent(water2);
-      
        Composite composite3 = new Composite();
-       composite3.addComponent(composite1);
+       composite2.addComponent(composite1);
        composite3.addComponent(composite2);
-
        composite3.put();
-      // System.out.println();
-      //
-      // composite3.addComponent(fruit3);
-      // composite3.addComponent(water3);
-      // composite3.addComponent(meat3);
-      // composite3.put();
-      // System.out.println();
-      //
-      // composite3.removeComponent(composite1);
-      // composite3.put();
 
     }
 }

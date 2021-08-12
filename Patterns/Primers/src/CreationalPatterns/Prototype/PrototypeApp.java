@@ -5,7 +5,7 @@ public class PrototypeApp {
         Car car = new Car("Red", 200, "electro");
         System.out.println(car);
 
-        Object copyCar = car.copy();
+        Car copyCar = car.copy();
         System.out.println(copyCar);
 
         //Nissan nissan = new Nissan("green", 150, "oil");

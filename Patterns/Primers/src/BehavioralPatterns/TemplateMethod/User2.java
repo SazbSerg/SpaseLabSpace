@@ -2,11 +2,11 @@ package BehavioralPatterns.TemplateMethod;
 
 public class User2 extends TemplateUsers {
     @Override
-    void fio() {
-        System.out.println("Термилов Антон Акперович");
+    String fio() {
+        return "Термилов Антон Акперович";
     }
     @Override
-    void passport() {
-        System.out.println("КМ 932234");
+    String passport() {
+        return "КМ 932234";
     }
 }
