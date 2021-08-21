@@ -7,6 +7,7 @@ public class NewsChannel implements TelegramChannel{
     private String post;
     private List<Observers> subscribers = new ArrayList<>();
 
+
     public void addPost(String post){
         this.post = post;
         notifySubscribers();
