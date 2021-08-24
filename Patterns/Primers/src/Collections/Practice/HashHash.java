@@ -7,6 +7,9 @@ import java.util.Set;
 
 public class HashHash {
     public static void main(String[] args) {
+        int[] arr = new int[1];
+
+
         Set<String> set=new HashSet<String>();
 
         set.add("Hello");

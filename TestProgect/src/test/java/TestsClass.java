@@ -1,7 +1,9 @@
+import BinarySearching.BinarySearchingMethod;
 import ComparatorPrimer.PowerComparator;
 import ComparatorPrimer.SportCar;
 import CompareblePrimer.Car;
 import EqualsAndHashCode.MethodEquals;
+import QuickSortAlgorithm.QuickSort;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -74,4 +76,36 @@ public class TestsClass {
 
         Assert.assertEquals(expected,stringActual);  // проверка
     }
+
+    @Test
+    public void BinarySearchingMethodTest(){
+        BinarySearchingMethod binarySearchingMethod = new BinarySearchingMethod();
+        int actual = binarySearchingMethod.search(new int[]{1,2,3,5,6,7,9}, 7);
+        int expected = 5;
+        Assert.assertEquals(expected,actual);
+        int actual1 = binarySearchingMethod.search(new int[]{1,2,3,5,6,7,9}, 10);
+        int expected1 = -1;
+        Assert.assertEquals(expected1,actual1);
+    }
+
+    @Test
+    public void QuickSortTest(){
+        QuickSort quickSort = new QuickSort();
+        int[] actualArray = {2,4,9,4,2,8,-1,0,10};
+        System.out.println(Arrays.toString(actualArray));
+
+        int low = 0;
+        int high = actualArray.length - 1;
+        quickSort.quickSort(actualArray,low,high);
+        System.out.println(Arrays.toString(actualArray));
+
+        int[] expectedArray = {-1, 0, 2, 2, 4, 4, 8, 9, 10};
+        String expected = Arrays.toString(expectedArray);
+
+        String actual = Arrays.toString(actualArray);
+        Assert.assertEquals(expected,actual);
+
+
+    }
+
 }
