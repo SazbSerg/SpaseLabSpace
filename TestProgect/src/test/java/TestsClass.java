@@ -4,6 +4,7 @@ import ComparatorPrimer.SportCar;
 import CompareblePrimer.Car;
 import EqualsAndHashCode.MethodEquals;
 import QuickSortAlgorithm.QuickSort;
+import WideTree.WideTreeApp;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -104,8 +105,21 @@ public class TestsClass {
 
         String actual = Arrays.toString(actualArray);
         Assert.assertEquals(expected,actual);
+    }
 
-
+    @Test
+    public void WideTreeTest(){
+        WideTreeApp.Tree root =
+                new WideTreeApp.Tree(20,
+                        new WideTreeApp.Tree(7,
+                                new WideTreeApp.Tree(4, null, new WideTreeApp.Tree(6)), new WideTreeApp.Tree(9)),
+                        new WideTreeApp.Tree(35,
+                                new WideTreeApp.Tree(31, new WideTreeApp.Tree(28), null),
+                                new WideTreeApp.Tree(40, new WideTreeApp.Tree(38), new WideTreeApp.Tree(32))));
+        WideTreeApp wideTreeApp = new WideTreeApp();
+        int actual = WideTreeApp.sumWide(root);
+        int expected = 250;
+        Assert.assertEquals(expected,actual);
     }
 
 }
